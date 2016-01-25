@@ -12,15 +12,38 @@ namespace ConsoleApplication1De
         {
             Console.WriteLine("Anna luku: ");
             string line = Console.ReadLine();
-            int luku1 = int.Parse(line);
+            int luku = int.Parse(line);
+            int summa = luku + luku;
 
-            Console.WriteLine("Anna luku: ");
-            line = Console.ReadLine();
-            int luku2 = int.Parse(line);
 
-            Console.WriteLine("Anna luku: ");
-            line = Console.ReadLine();
-            int luku3 = int.Parse(line);
+            if (luku != 0) {
+                Console.WriteLine("Anna luku: ");
+                Console.ReadLine();
+            }
+
+            else if (luku == 0) {
+                Console.WriteLine(summa);
+            }
+
+
+            /*do {
+                Console.WriteLine("Anna luku: ");
+                Console.ReadLine();
+            }
+
+            while (luku == 0);
+            Console.WriteLine(summa);
+                
+         //   Console.WriteLine("Lukujen summa on yhteensä: {0}", summa);
+           
+
+            /*       Console.WriteLine("Anna luku: ");
+                     line = Console.ReadLine();
+                     int luku2 = int.Parse(line);
+
+                     Console.WriteLine("Anna luku: ");
+                     line = Console.ReadLine();
+                     int luku3 = int.Parse(line); */
         }
     }
 }
